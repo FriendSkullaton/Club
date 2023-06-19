@@ -9,11 +9,11 @@ h1{
 }
 
 h2 {
-    font-size: 1.875rem;
+    font-size: 2.2rem;
 }
 
 h3{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 a {
@@ -23,7 +23,6 @@ a {
 ul li {
     display: inline-block;
     padding: 0.625rem 0.625rem;
-    margin-right: 0.9375rem;
 }
 
 ul li a{
@@ -44,6 +43,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
     background-color: #add8e6;
     width: 100%;
     height: 5rem;
@@ -82,15 +82,20 @@ nav {
     justify-content: center;
 }
 
+#about h2 {
+    padding: 0.9375rem;
+}
+
 .about-description {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 1.5rem;
 }
 
 .imgcontainer {
-    width: 10%;
+    width: auto;
     height: 300px;
     overflow: hidden;
     display: flex;
@@ -122,4 +127,16 @@ footer {
     background-color: #add8e6;
     width: 100%;
     height: 5rem;
+}
+
+/* Media queries */
+
+@media only screen and (max-width:800px) {
+    .imgcontainer img {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
 }
